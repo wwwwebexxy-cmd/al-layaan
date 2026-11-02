@@ -15,10 +15,10 @@ export default function Navbar() {
         <div className={styles.logo}>
           <Link href="/#home" onClick={closeMenu}>
             <Image
-              src="/shapes-shades-logo.webp"
-              alt="Shapes & Shades Interior Studio"
-              width={1178}
-              height={683}
+              src="/al-layaan-logo-cropped.webp"
+              alt="AL LAYAAN Aluminium and Glass"
+              width={620}
+              height={440}
               priority
               className={styles.logoImage}
               sizes="(max-width: 768px) 170px, 220px"

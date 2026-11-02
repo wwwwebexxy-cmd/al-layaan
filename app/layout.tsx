@@ -17,69 +17,53 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
 export const metadata: Metadata = {
-  title: "Shapes & Shades Interior Design | Premium Aesthetics in Al Ain",
-  description: "Elevating your living spaces with bespoke interior design and premium aesthetics. Based in Al Ain, Abu Dhabi, UAE.",
+  metadataBase: new URL(siteUrl),
+  title: "AL LAYAAN | Aluminium & Glass Solutions",
+  description: "Premium aluminium and glass solutions for homes and businesses, from shop fronts and partitions to doors, windows, kitchens, and maintenance.",
   icons: {
-    icon: "/favicon-matte-gold.webp",
-    shortcut: "/favicon-matte-gold.webp",
-    apple: "/favicon-matte-gold.webp",
+    icon: "/al-layaan-logo.webp",
+    shortcut: "/al-layaan-logo.webp",
+    apple: "/al-layaan-logo.webp",
   },
-  keywords: ["Interior Design", "Bespoke Interiors", "Shapes and Shades", "Al Ain Interior Design", "Abu Dhabi Interiors", "UAE", "Premium Aesthetics", "Home Decor", "Commercial Design", "Shapes and Shades LLC SPC"],
+  keywords: ["AL LAYAAN", "Aluminium and Glass", "Shop Fronts", "Glass Partitions", "Automatic Glass Doors", "UAE", "Aluminium Kitchens", "Window Maintenance"],
   openGraph: {
-    title: "Shapes & Shades Interior Design",
-    description: "Elevating your living spaces with bespoke interior design and premium aesthetics. Based in Al Ain.",
-    url: "https://shapesandshades.ae/",
-    siteName: "Shapes & Shades Interior Design",
+    title: "AL LAYAAN | Aluminium & Glass Solutions",
+    description: "Premium Aluminium & Glass Solutions for Homes & Businesses.",
+    url: "/",
+    siteName: "AL LAYAAN Aluminium and Glass",
     images: [
       {
-        url: "https://shapesandshades.ae/logo-shapes-shade.png",
+        url: "/al-layaan-logo.jpeg",
         width: 1200,
         height: 630,
-        alt: "Shapes & Shades Interior Design Logo",
+        alt: "AL LAYAAN Aluminium and Glass logo",
       }
     ],
     locale: "en_AE",
     type: "website",
   },
   alternates: {
-    canonical: "https://shapesandshades.ae/",
+    canonical: "/",
   },
   other: {
-    "geo.region": "AE-AZ",
-    "geo.placename": "Al Ain",
-    "geo.position": "24.199165;55.763479",
-    "ICBM": "24.199165, 55.763479"
+    "geo.region": "AE",
+    "geo.placename": "United Arab Emirates",
   }
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "InteriorDesignBusiness",
-  "name": "Shapes and Shades Interior Design LLC SPC",
-  "image": "https://shapesandshades.ae/logo-shapes-shade.png",
-  "@id": "https://shapesandshades.ae/",
-  "url": "https://shapesandshades.ae/",
-  "telephone": "+971545784247",
-  "email": "Sales@shapesandshades.ae",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Industrial Area",
-    "addressLocality": "Al Ain",
-    "addressRegion": "Abu Dhabi",
-    "addressCountry": "AE"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 24.1991651,
-    "longitude": 55.763479
-  },
-  "sameAs": [
-    "https://www.instagram.com/shapes_n_shades_interiors",
-    "https://www.facebook.com/share/1CTPYv18Xd/",
-    "https://snapchat.com/t/2mm3iKk8",
-    "https://www.tiktok.com/@shapes.and.shades0"
-  ]
+  "@type": "HomeAndConstructionBusiness",
+  "name": "AL LAYAAN Aluminium and Glass",
+  "description": "Premium aluminium and glass solutions for homes and businesses.",
+  "image": `${siteUrl}/al-layaan-logo.jpeg`,
+  "@id": siteUrl,
+  "url": siteUrl,
+  "areaServed": "United Arab Emirates",
+  "serviceType": "Aluminium and glass solutions"
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

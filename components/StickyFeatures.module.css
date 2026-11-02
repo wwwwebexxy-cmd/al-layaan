@@ -32,7 +32,7 @@
   height: 400px;
   object-fit: cover;
   border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 30px rgba(16, 40, 62, 0.16);
 }
 
 .sliderContainer {

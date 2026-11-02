@@ -29,7 +29,7 @@
   border-radius: 0.75rem;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 28px rgba(16, 40, 62, 0.16);
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -52,7 +52,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
+  background: linear-gradient(180deg, rgba(5, 30, 54, 0.2), rgba(5, 30, 54, 0.92));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,6 +75,23 @@
   transition: transform 0.3s ease;
 }
 
+.cardDescription {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  margin: 0.6rem auto 0;
+  max-width: 18rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 .card:hover .cardTitle {
+  transform: translateY(0);
+}
+
+.card:hover .cardDescription {
+  opacity: 1;
   transform: translateY(0);
 }

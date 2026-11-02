@@ -4,7 +4,7 @@
   bottom: 2rem;
   width: 3rem;
   height: 3rem;
-  background-color: #25D366;
+  background-color: var(--primary);
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -19,7 +19,7 @@
 }
 
 .floatingBtn:hover {
-  background-color: #128C7E;
+  background-color: var(--secondary);
   transform: scale(1.1);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
 }

@@ -1,89 +1,85 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import styles from "./StickyFeatures.module.css";
 import ScrollReveal from "./ScrollReveal";
+import Image from "next/image";
 
 const features = [
   {
     id: 1,
-    title: "Al Ain",
-    description: "Serving residential and commercial clients across Al Ain.",
-    image: "/al_ain_interior.png"
+    title: "Precision Fabrication",
+    description: "Careful measurements and clean detailing for a confident final fit.",
+    image: "/al-layaan/about-workshop.webp",
   },
   {
     id: 2,
-    title: "Abu Dhabi",
-    description: "Transforming spaces in the heart of Abu Dhabi.",
-    image: "/abu_dhabi_interior.png"
+    title: "Premium Materials",
+    description: "Quality aluminium, glass, hardware, and finishes selected for daily use.",
+    image: "/al-layaan/office-partitions.webp",
   },
   {
     id: 3,
-    title: "Dubai",
-    description: "Premium interior design services in Dubai.",
-    image: "/dubai_interior.png"
+    title: "Made for Your Space",
+    description: "Solutions shaped around your project, your measurements, and your style.",
+    image: "/al-layaan/kitchen-cabinets.webp",
   },
   {
     id: 4,
-    title: "Sharjah",
-    description: "Expert fit-out solutions for Sharjah residents.",
-    image: "/sharjah_interior.png"
+    title: "Professional Installation",
+    description: "A tidy, considered installation process from first fitting to final check.",
+    image: "/al-layaan/automatic-glass-doors.webp",
   },
   {
     id: 5,
-    title: "Ajman & Um al Quwain",
-    description: "Custom joinery and upholstery across the Northern Emirates.",
-    image: "/ajman_interior.png"
+    title: "Clear Communication",
+    description: "Straightforward guidance so every project decision feels simple.",
+    image: "/al-layaan/shop-fronts.webp",
   },
   {
     id: 6,
-    title: "Ras al Khaimah",
-    description: "Delivering bespoke design to Ras al Khaimah.",
-    image: "/rak_interior.png"
-  }
+    title: "Reliable Maintenance",
+    description: "Ongoing support for windows, doors, screens, and moving hardware.",
+    image: "/al-layaan/window-door-maintenance.webp",
+  },
 ];
 
 export default function StickyFeatures() {
   return (
     <section id="features" className={styles.sectionContainer}>
       <div className="container">
-
-        {/* Top Split Layout */}
         <div className={styles.splitLayout}>
           <div className={styles.textContent}>
             <ScrollReveal direction="up" delay={0.1}>
-              <h2 className="section-title text-gradient" style={{ textAlign: 'left', margin: 0 }}>Our Service Area</h2>
+              <h2 className="section-title text-gradient" style={{ textAlign: "left", margin: 0 }}>Why Choose AL LAYAAN</h2>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.3}>
               <p className={styles.description}>
-                WHERE ARE WE SERVE! We provide interior design and fit-out services across the UAE. Explore the regions we actively serve.
+                From a single door to a complete commercial fit-out, we bring the same care to every aluminium and glass detail.
               </p>
             </ScrollReveal>
           </div>
           <div className={styles.imageContent}>
             <ScrollReveal direction="left" delay={0.2}>
-              <img src="/our-area.jpg" alt="Our Service Area" className={styles.mainImage} />
+              <Image src="/al-layaan/about-workshop.webp" alt="AL LAYAAN aluminium and glass workshop" width={1536} height={1024} className={styles.mainImage} />
             </ScrollReveal>
           </div>
         </div>
 
-        {/* Movement Carts (Horizontal Slider) */}
         <ScrollReveal direction="up" delay={0.4}>
           <div className={styles.sliderContainer}>
-          <div className={styles.sliderTrack}>
-            {features.concat(features).map((feature, index) => (
-              <div key={`${feature.id}-${index}`} className={styles.slideCard}>
-                <img src={feature.image} alt={feature.title} className={styles.slideImage} />
-                <div className={styles.slideContent}>
-                  <h3 className={styles.slideTitle}>{feature.title}</h3>
-                  <p className={styles.slideDesc}>{feature.description}</p>
+            <div className={styles.sliderTrack}>
+              {features.concat(features).map((feature, index) => (
+                <div key={`${feature.id}-${index}`} className={styles.slideCard}>
+                  <Image src={feature.image} alt={feature.title} width={1024} height={1536} className={styles.slideImage} />
+                  <div className={styles.slideContent}>
+                    <h3 className={styles.slideTitle}>{feature.title}</h3>
+                    <p className={styles.slideDesc}>{feature.description}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
         </ScrollReveal>
-
       </div>
     </section>
   );

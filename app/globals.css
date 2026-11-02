@@ -1,12 +1,15 @@
 :root {
-  --background: #F4EFE6;
-  --foreground: #2A2522;
-  --primary: #A2825A;
-  --primary-glow: rgba(162, 130, 90, 0.3);
-  --secondary: #C4A983;
-  --card-bg: #FFFFFF;
-  --card-border: rgba(162, 130, 90, 0.2);
-  --text-muted: #6B625B;
+  --background: #f4f8fb;
+  --foreground: #10283e;
+  --primary: #0b3b68;
+  --primary-glow: rgba(11, 59, 104, 0.24);
+  --secondary: #2d78ad;
+  --accent: #72c1e9;
+  --metallic: #aebdca;
+  --card-bg: #ffffff;
+  --card-border: rgba(11, 59, 104, 0.15);
+  --text-muted: #536779;
+  --surface-muted: #e7f0f6;
 }
 
 html {
@@ -43,7 +46,7 @@ button {
 
 /* Gradient text utility */
 .text-gradient {
-  background: linear-gradient(to right, var(--primary), var(--secondary));
+  background: linear-gradient(105deg, var(--primary) 5%, var(--secondary) 55%, var(--metallic) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

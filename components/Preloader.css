@@ -63,7 +63,7 @@
   max-width: min(78vw, 340px);
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 0 16px rgba(197, 168, 128, 0.24));
+  filter: drop-shadow(0 0 16px rgba(45, 120, 173, 0.24));
 }
 
 /* Fade out content before curtains open */
@@ -87,7 +87,7 @@
 .loading-bar-progress {
   height: 100%;
   width: 100%;
-  background-color: #d4af37;
+  background-color: var(--secondary);
   border-radius: 2px;
   transform-origin: left;
   animation: loadProgress 2s ease-in-out infinite;

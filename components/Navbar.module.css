@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   z-index: 50;
-  background: rgba(244, 239, 230, 0.85);
+  background: rgba(244, 248, 251, 0.9);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--card-border);
 }
@@ -31,9 +31,9 @@
 
 .logoImage {
   display: block;
-  width: auto;
+  width: 180px;
   max-width: 44vw;
-  height: 56px;
+  height: 62px;
   object-fit: contain;
   transition: opacity 0.2s ease;
 }
@@ -84,8 +84,9 @@
   }
 
   .logoImage {
-    height: 46px;
-    max-width: 48vw;
+    width: 155px;
+    height: 52px;
+    max-width: 52vw;
   }
 
   .mobileToggle {

@@ -10,10 +10,10 @@ if (typeof window !== "undefined") {
 }
 
 const cards = [
-  { step: "01", title: "Consultation", desc: "We start by sitting down with you to understand your space, your lifestyle, and exactly what success looks like for this project." },
-  { step: "02", title: "Concept Design", desc: "Crafting beautiful mood boards, 3D renderings, and precise floor plans tailored to your vision." },
-  { step: "03", title: "Procurement", desc: "Sourcing premium materials, custom furniture, and unique decor from our global network of artisans." },
-  { step: "04", title: "Installation", desc: "Bringing the design to life with meticulous white-glove installation and final styling touches." },
+  { step: "01", title: "Consultation", desc: "We understand your space, requirements, preferred finishes, and the result you want to achieve." },
+  { step: "02", title: "Measurements", desc: "Our team takes careful measurements and shapes a practical solution around your project." },
+  { step: "03", title: "Fabrication", desc: "Aluminium, glass, hardware, and finishing details are prepared with precision and care." },
+  { step: "04", title: "Installation", desc: "We bring the work together with a tidy installation and a final quality check." },
 ];
 
 const HorizontalProcess = () => {
@@ -23,8 +23,6 @@ const HorizontalProcess = () => {
   useGSAP(
     () => {
       if (!sectionRef.current || !wrapperRef.current) return;
-
-      const cardsCount = cards.length;
 
       // Calculate the exact distance we need to scroll horizontally.
       // It's the total width of the inner wrapper minus the width of the section container (avoids scrollbar discrepancies).

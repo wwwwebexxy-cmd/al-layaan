@@ -82,7 +82,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.05);
+  background: var(--surface-muted);
   color: var(--foreground);
   font-size: 1.25rem;
   transition: all 0.3s ease;
@@ -92,8 +92,7 @@
   background: var(--primary);
   color: #fff;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
-  /* matching potential primary color vibe */
+  box-shadow: 0 5px 15px var(--primary-glow);
 }
 
 @media (max-width: 768px) {

@@ -13,8 +13,8 @@ const Preloader = () => {
     const hasSeenPreloader = sessionStorage.getItem("hasSeenPreloader");
     
     if (hasSeenPreloader) {
-      setShowPreloader(false);
-      return;
+      const hidePreloaderTimer = window.setTimeout(() => setShowPreloader(false), 0);
+      return () => window.clearTimeout(hidePreloaderTimer);
     }
 
     // Prevent scrolling while preloader is active
@@ -50,10 +50,10 @@ const Preloader = () => {
       {/* Logo Container */}
       <div className={`preloader-content ${isAnimating ? "fade-out" : ""}`}>
         <Image
-          src="/shapes-shades-logo.webp"
-          alt="Shapes & Shades Interior Studio"
-          width={1178}
-          height={683}
+          src="/al-layaan-logo-cropped.webp"
+          alt="AL LAYAAN Aluminium and Glass"
+          width={620}
+          height={440}
           className="preloader-logo"
           sizes="(max-width: 768px) 240px, 340px"
           priority

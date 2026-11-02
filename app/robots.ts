@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
   return {
     rules: [
       {
@@ -20,6 +22,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       }
     ],
-    sitemap: "https://shapesandshades.ae/sitemap.xml",
+    sitemap: `${siteUrl}/sitemap.xml`,
   };
 }
