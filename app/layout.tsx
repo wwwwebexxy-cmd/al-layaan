@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     shortcut: "/al-layaan-logo-transparent.webp",
     apple: "/al-layaan-logo-transparent.webp",
   },
-  keywords: ["AL LAYAAN", "Aluminium and Glass", "Shop Fronts", "Glass Partitions", "Automatic Glass Doors", "UAE", "Aluminium Kitchens", "Window Maintenance"],
+  keywords: ["AL LAYAAN", "Aluminium and Glass", "Shop Fronts", "Glass Partitions", "Automatic Glass Doors", "Dubai UAE", "Aluminium Kitchens", "Window Maintenance"],
   openGraph: {
     title: "AL LAYAAN | Aluminium & Glass Solutions",
     description: "Premium Aluminium & Glass Solutions for Homes & Businesses.",
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   other: {
-    "geo.region": "AE",
-    "geo.placename": "United Arab Emirates",
+    "geo.region": "AE-DU",
+    "geo.placename": "Dubai, UAE",
   }
 };
 
@@ -62,7 +62,13 @@ const jsonLd = {
   "image": `${siteUrl}/al-layaan-logo-transparent.webp`,
   "@id": siteUrl,
   "url": siteUrl,
-  "areaServed": "United Arab Emirates",
+  "telephone": "+971504789326",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dubai",
+    "addressCountry": "AE"
+  },
+  "areaServed": "Dubai, UAE",
   "serviceType": "Aluminium and glass solutions"
 };
 

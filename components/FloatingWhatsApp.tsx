@@ -6,9 +6,11 @@ import styles from "./FloatingWhatsApp.module.css";
 export default function FloatingWhatsApp() {
   return (
     <a
-      href="#contact"
+      href="https://wa.me/971504789326"
+      target="_blank"
+      rel="noopener noreferrer"
       className={styles.floatingBtn}
-      aria-label="Request an AL LAYAAN consultation"
+      aria-label="Chat with AL LAYAAN on WhatsApp at +971504789326"
     >
       <FaWhatsapp className={styles.icon} />
     </a>

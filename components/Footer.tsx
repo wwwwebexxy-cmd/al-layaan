@@ -22,6 +22,19 @@ export default function Footer() {
           <p className={styles.description}>
             Premium aluminium and glass solutions for homes and businesses, shaped with precision and installed with care.
           </p>
+          <div className={styles.contactDetails}>
+            <a
+              href="https://wa.me/971504789326"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.contactLink}
+            >
+              <FaWhatsapp /> +971504789326
+            </a>
+            <span className={styles.contactLocation}>
+              <FaMapMarkerAlt /> Dubai-UAE
+            </span>
+          </div>
         </div>
 
         <div className={styles.linksGroup}>
@@ -44,10 +57,22 @@ export default function Footer() {
             <a href="#contact" className={styles.socialIcon} aria-label="Contact AL LAYAAN">
               <FaEnvelope />
             </a>
-            <a href="#contact" className={styles.socialIcon} aria-label="Find AL LAYAAN service coverage">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Dubai%2C%20United%20Arab%20Emirates"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialIcon}
+              aria-label="Find AL LAYAAN in Dubai, UAE"
+            >
               <FaMapMarkerAlt />
             </a>
-            <a href="#contact" className={styles.socialIcon} aria-label="Request a consultation from AL LAYAAN">
+            <a
+              href="https://wa.me/971504789326"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialIcon}
+              aria-label="Chat with AL LAYAAN on WhatsApp at +971504789326"
+            >
               <FaWhatsapp />
             </a>
           </div>
