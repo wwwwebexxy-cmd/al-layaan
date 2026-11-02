@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   title: "AL LAYAAN | Aluminium & Glass Solutions",
   description: "Premium aluminium and glass solutions for homes and businesses, from shop fronts and partitions to doors, windows, kitchens, and maintenance.",
   icons: {
-    icon: "/al-layaan-logo.webp",
-    shortcut: "/al-layaan-logo.webp",
-    apple: "/al-layaan-logo.webp",
+    icon: "/al-layaan-logo-transparent.webp",
+    shortcut: "/al-layaan-logo-transparent.webp",
+    apple: "/al-layaan-logo-transparent.webp",
   },
   keywords: ["AL LAYAAN", "Aluminium and Glass", "Shop Fronts", "Glass Partitions", "Automatic Glass Doors", "UAE", "Aluminium Kitchens", "Window Maintenance"],
   openGraph: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "AL LAYAAN Aluminium and Glass",
     images: [
       {
-        url: "/al-layaan-logo.jpeg",
+        url: "/al-layaan-logo-transparent.webp",
         width: 1200,
         height: 630,
         alt: "AL LAYAAN Aluminium and Glass logo",
@@ -59,7 +59,7 @@ const jsonLd = {
   "@type": "HomeAndConstructionBusiness",
   "name": "AL LAYAAN Aluminium and Glass",
   "description": "Premium aluminium and glass solutions for homes and businesses.",
-  "image": `${siteUrl}/al-layaan-logo.jpeg`,
+  "image": `${siteUrl}/al-layaan-logo-transparent.webp`,
   "@id": siteUrl,
   "url": siteUrl,
   "areaServed": "United Arab Emirates",

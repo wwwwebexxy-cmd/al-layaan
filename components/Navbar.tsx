@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className={styles.logo}>
           <Link href="/#home" onClick={closeMenu}>
             <Image
-              src="/al-layaan-logo-cropped.webp"
+              src="/al-layaan-logo-transparent.webp"
               alt="AL LAYAAN Aluminium and Glass"
               width={620}
               height={440}
