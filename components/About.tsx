@@ -13,7 +13,7 @@ export default function About() {
               alt="AL LAYAAN craftsman inspecting an aluminium and glass frame"
               width={1536}
               height={1024}
-              style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "1rem" }}
+              className={styles.image}
             />
           </ScrollReveal>
         </div>
