@@ -6,6 +6,15 @@
   gap: 2rem;
 }
 
+.titleIcon {
+  display: inline-block;
+  margin-right: 0.65rem;
+  color: var(--primary);
+  font-size: 0.8em;
+  vertical-align: -0.08em;
+  filter: drop-shadow(0 4px 8px var(--primary-glow));
+}
+
 .logoWrapper {
   background-color: white; /* Ensures transparent or dark logos are visible on dark background */
   border-radius: 0.75rem;

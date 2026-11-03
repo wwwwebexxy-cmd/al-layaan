@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { FaBuilding } from "react-icons/fa";
 import ScrollReveal from "./ScrollReveal";
 import styles from "./OurClients.module.css";
 
@@ -18,7 +19,10 @@ export default function OurClients() {
     <section className="py-20" id="our-clients">
       <div className="container">
         <ScrollReveal direction="up" delay={0.1}>
-          <h2 className="section-title text-gradient text-center mb-12">Made for Modern Spaces</h2>
+          <h2 className="section-title text-gradient text-center mb-12">
+            <FaBuilding className={styles.titleIcon} aria-hidden="true" />
+            Made for Modern Spaces
+          </h2>
         </ScrollReveal>
 
         <div className={styles.logoGrid}>
